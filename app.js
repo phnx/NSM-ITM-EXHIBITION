@@ -92,7 +92,7 @@ function receivedMessage(event) {
       case 'hello':
         sendZoneList(senderID);
         break;
-
+	
       default:
         sendTextMessage(senderID, messageText);
     }
@@ -131,7 +131,7 @@ function sendTextMessage(recipientId, messageText) {
 function callSendAPI(messageData) {
   request({
     uri: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: { access_token: 'EAABy6Sg8Rz8BAP4wHY51OuNXNaeQDqZAKoW0odQZBmAmTyVrS6HzlrO8AZC7O29RtayX6dm4lpi6OjbuH0DQZBO1l5c6ZCWydfTe7deSNf3ezcpETZBDESp0eBuT4v6JZChpQG5vaRfKJ5feIxyLh1c3KSgZCp17ovBa611xiQhWTgZDZD' },
+    qs: { access_token: 'not what you want to see - I\'ve also regenerated the one in previous revision' },
     method: 'POST',
     json: messageData
 
